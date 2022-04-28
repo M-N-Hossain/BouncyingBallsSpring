@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(195, 150, 145);
+    border: 2px solid black;
+}
+
+h1{
+    margin-left: 4px;
+    color:rgb(205, 26, 26);
+}
+.line{
+    border-bottom: 4px dashed rgb(205, 26, 26);
+
+}
+.line2{
+    border-bottom: 3px solid black;
+}
+.firstSection{
+    display: flex;
+    margin: 10px;
+}
+.secondSection{
+    border-top: solid black;
+}
+
+p{
+    font-family: fantasy;
+    align-items: center;
+}
+.right{
+    margin-top: 10px;
+    margin-left: 15%;
+
+}
+.left{
+    margin-left: 20%;
+    align-items: center;
+}
+
+.secondSection div{
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.secondSection div a{
+    margin-left: 4px;
+}
+.secondSection div a img{
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+.secondSection div a img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+}
+
+.developerHeader{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.developerInfo{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+/*.developerInfo img{*/
+/*    margin-top: 10px;*/
+/*    margin-left: 10%;*/
+/*}*/
+.developerInfo p{
+    margin-top: 10px;
+    font-family: "Bell MT", serif;
+}
+.developerInfoSection{
+    display: flex;
+}
+
