@@ -44,10 +44,13 @@
 <section class="developerInfoSection">
     <div class="developerInfo">
         <img src="image/emil1.png" width="160px" height="135px"  style="clip-path: circle()" alt="">
-        <p>Emil Høeg Engelbrechtsen</p>
-        <p>Software Developer</p>
-        <p>Ap Degree in Computer Science</p>
-        <p>Copenhagen School of Design & Technology</p>
+        <li  th:each="feature : ${developer}">
+            <span th:text="${developer}"></span>
+        </li>
+<!--        <p>Emil Høeg Engelbrechtsen</p>-->
+<!--        <p>Software Developer</p>-->
+<!--        <p>Ap Degree in Computer Science</p>-->
+<!--        <p>Copenhagen School of Design & Technology</p>-->
     </div>
     <div class="developerInfo">
         <img src="nayeem11.jpg" width="160px" height="135px"  style="clip-path: circle()" alt="">
@@ -64,7 +67,7 @@
         <p>Copenhagen School of Design & Technology</p>
     </div>
     <div class="developerInfo">
-        <img src="image/emil1.png" width="160px" height="135px"  style="clip-path: circle()" alt="">
+        <img src="#" width="160px" height="135px"  style="clip-path: circle()" alt="">
         <p>Kim Keiser</p>
         <p>Software Developer</p>
         <p>Ap Degree in Computer Science</p>
