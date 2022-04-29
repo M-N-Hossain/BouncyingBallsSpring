@@ -44,14 +44,15 @@
 <section class="developerInfoSection">
     <div class="developerInfo">
         <img src="image/emil1.png" width="160px" height="135px"  style="clip-path: circle()" alt="">
-        <ul th:each="admit_children_list : ${developer}">
+        <ul th:each="${developer}">
             <span th:text="${developer}"></span>
+            <p>Software Developer</p>
+            <p>Ap Degree in Computer Science</p>
+            <p>Copenhagen School of Design & Technology</p>
         </ul>
 
 <!--        <p>Emil Høeg Engelbrechtsen</p>-->
-<!--        <p>Software Developer</p>-->
-<!--        <p>Ap Degree in Computer Science</p>-->
-<!--        <p>Copenhagen School of Design & Technology</p>-->
+
     </div>
     <div class="developerInfo">
         <img src="nayeem11.jpg" width="160px" height="135px"  style="clip-path: circle()" alt="">
