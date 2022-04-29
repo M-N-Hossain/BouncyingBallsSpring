@@ -17,11 +17,18 @@ public class DeveloperDAO {
     public String getDeveloper(String name) {
 //        String sql = "SELECT * FROM developer WHERE name = ?;";
 //        RowMapper<Developer> rowMapper1 = new BeanPropertyRowMapper<>(Developer.class);
-//        jdbcTemplate.query(sql, rowMapper1, name);
+//        Developer developer = jdbcTemplate.queryForObject(sql, rowMapper1, name);
+//
+//        assert developer != null;
+//        return developer.toString();
 
         List<Developer> developer = jdbcTemplate.query(
                 "SELECT * FROM developer WHERE name = ?;",
                 new BeanPropertyRowMapper<>(Developer.class), name);
-        return developer.get(0).toString();
+        String developerName = developer.get(0).getName();
+        String developerOccupation = developer.get(0).getOccupation();
+
+        return developerName +"\n" + developerOccupation;
     }
+
 }

@@ -44,9 +44,10 @@
 <section class="developerInfoSection">
     <div class="developerInfo">
         <img src="image/emil1.png" width="160px" height="135px"  style="clip-path: circle()" alt="">
-        <li  th:each="feature : ${developer}">
+        <ul th:each="admit_children_list : ${developer}">
             <span th:text="${developer}"></span>
-        </li>
+        </ul>
+
 <!--        <p>Emil Høeg Engelbrechtsen</p>-->
 <!--        <p>Software Developer</p>-->
 <!--        <p>Ap Degree in Computer Science</p>-->
